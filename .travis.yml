@@ -9,4 +9,6 @@ install:
 
 script:
   - black src/ --check
+  - cd tests/
   - pytest
+  - cd ..

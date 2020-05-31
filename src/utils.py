@@ -10,7 +10,9 @@ async def load_pages(urls: list):
     return dict(zip(urls, results))
 
 
-async def load_one_page(url):
+async def load_one_page(url: str) -> dict:
+    if not url.startswith("http"):
+        url = f"http://{url}"
     start_time = time.time()
     try:
         status = await make_request(url)

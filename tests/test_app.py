@@ -4,11 +4,11 @@ import json
 async def test_pages(test_cli):
     data = {
         "pages": [
-            "https://google.com/",
+            "google.com/",
             "https://facebook.com/",
             "https://yahoo.com/",
             "https://youtube.com",
-            "https://spotify.com",
+            "spotify.com",
             "https://twitter.com"
         ]
     }

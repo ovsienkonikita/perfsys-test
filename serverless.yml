@@ -18,6 +18,7 @@ provider:
 custom:
   pythonRequirements:
     dockerizePip: non-linux
+    usePoetry: false
 
 functions:
   app:

@@ -20,11 +20,7 @@ async def load_one_page(url):
     else:
         load_time = time.time() - start_time
 
-    return {
-        "url": url,
-        "status": "ok" if status else "failure",
-        "load_time": load_time
-    }
+    return {"url": url, "status": "ok" if status else "failure", "load_time": load_time}
 
 
 async def make_request(url):
